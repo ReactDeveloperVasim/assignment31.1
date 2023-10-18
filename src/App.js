@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Card, CardContent } from "@mui/material";
+import React from "react";
+import { Landing } from "./components/Landing";
+import PracticeOnClickClr from "./components/PracticeOnClickClr";
+import { Bulb } from "./components/Bulb";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Card sx={{bgcolor:"aliceblue"}}>
+        <CardContent>
+            <Landing />
+        </CardContent>
+    </Card>
+    // <PracticeOnClickClr />
+    // <Bulb />
+    // <ToDoList />
   );
 }
 
